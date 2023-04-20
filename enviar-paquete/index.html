@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <!-- Bootstrap-->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous"
+      />
+      <!--Fin Bootstrap-->
+      <!-- Fuente roboto-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Fin fuente roboto -->
+      <title>R-Part</title>
+  </head>
+  <body>
+<!-- Inicio navbar-->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="logo navbar-brand" href="../index.html"><img src="../Imagenes/logo.jpeg" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="nav-menu navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Enviar un paquete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Contacto/Index.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../sobre-nosotros/index.html">Sobre R-Part</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Fin Navbar-->
+
+
+    <form action="" method="post">
+        <div>
+          <label for="nombre-rem">Nombre del remitente:</label>
+          <input type="text" id="nombre-rem" name="nombre-rem" required>
+        </div>
+        <div>
+          <label for="direccion-rem">Dirección del remitente:</label>
+          <input type="text" id="direccion-rem" name="direccion-rem" required>
+        </div>
+        <div>
+          <label for="nombre-dest">Nombre del destinatario:</label>
+          <input type="text" id="nombre-dest" name="nombre-dest" required>
+        </div>
+        <div>
+          <label for="direccion-dest">Dirección del destinatario:</label>
+          <input type="text" id="direccion-dest" name="direccion-dest" required>
+        </div>
+        <div>
+          <label for="peso-paq">Peso del paquete (kg):</label>
+          <input type="number" id="peso-paq" name="peso-paq" min="0.1" step="0.1" required>
+        </div>
+        <div>
+          <label for="dimensiones-paq">Dimensiones del paquete (cm):</label>
+          <input type="text" id="dimensiones-paq" name="dimensiones-paq" required>
+        </div>
+        <div>
+          <label for="tipo-servicio">Tipo de servicio:</label>
+          <select id="tipo-servicio" name="tipo-servicio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="estandar">Estándar</option>
+            <option value="urgente">Urgente</option>
+            <option value="express">Express</option>
+          </select>
+        </div>
+        <div>
+          <br>
+          <button type="submit">Enviar paquete</button>
+        </div>
+      </form>
+      
+<!--Footer (Pie de pagina)-->
+<footer>  
+  <div class="footer-container">
+    <p>© 2023 R-Part</p>
+    <div class="social-media">
+      <a href="http://instagram.com" target="_blank"><img src="../Imagenes/instagram.png" alt="Instagram" width="30px"/></a> &nbsp;
+      <a href="http://twitter.com" target="_blank"><img src="../Imagenes/gorjeo.png" alt="Twitter" width="30px" /></a>&nbsp;
+      <a href="http://facebook.com" target="_blank"><img src="../Imagenes/facebook.png" alt="Facebook" width="30px" /></a>
+    </div>
+    <ul class="footer-links">
+      <li><a href="./Nuestro-Equipo/index.html">Nuestro Equipo</a></li>
+      <li><a href="#">Política de privacidad</a></li>
+      <li><a href="#">Términos y condiciones</a></li>
+    </ul>
+  </div>
+</footer>
+  
+
+
+<!-- Fin del footer (Pie de pagina)-->
+
+
+
+    <!--CDN Bootstrap-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fin CDN Bootstrap-->
+
+    <!--Script de confirmacion-->
+
+      <script src="./Script/confirmacion.js"></script>
+
+    <!--Fin de Script de confirmacion-->
+  </body>
+</html>

@@ -1,0 +1,219 @@
+/* Cambios globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* fin cambios globales */
+  
+  
+  /* Codigo de la Nabvar */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Agregado para centrar horizontalmente */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    width: 200px;
+    margin-right: 1rem;
+    /* Cambiado para crear un espacio entre la imagen y el texto */
+  }
+  
+  
+  .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-left: 1rem;
+  }
+  
+  .nav-menu li a {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-menu li a:hover {
+    background-color: #eee;
+    border-radius: 5px;
+    color: #007bff;
+  }
+  
+  
+  /* Fin codigo de la Nabvar */
+/* Formulario */
+
+  h1, h6 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .mensaje {
+    max-width: 400px;
+  }
+  
+  .d-flex {
+    margin-bottom: 10px;
+  }
+  
+  .fas {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+
+  .whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: darkgreen;
+  }
+  .email-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .email-btn:hover {
+    background-color: #ffa366;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  }
+  
+  .submit-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  .submit-btn:hover{
+    background-color: #0259b6;
+    border-color: #0259b6;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  }
+  
+/* Fin formulario */
+#confirmacionDiv {
+    display: none;
+    border: 2px solid #4CAF50;
+    background-color: #f1f1f1;
+    color: #4CAF50;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Codigo footer (pie de pagina) */
+
+  footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-container p {
+    margin: 0;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .footer-links a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #000;
+  }
+  
+  /* Fin codigo footer (pie de pagina) */
+  
